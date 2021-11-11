@@ -7,3 +7,5 @@ fs.readFile(__dirname + "/sample.txt", "utf8", function (err, data) {
   // fs.readFile("sample.txt", "utf8", function (err, data) {
   console.log(data);
 });
+
+console.log(__dirname);
