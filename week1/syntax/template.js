@@ -9,4 +9,11 @@ var name = "egoing";
 var letter = "Dear" + name + "\n\
 \n\
 aaa";
-console.log(letter);
+
+const literal = `안녕하세요
+안녕하세요
+안녕`;
+
+// console.log(letter);
+
+console.log(literal);
