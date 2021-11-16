@@ -37,7 +37,7 @@ var app = http.createServer(function (request, response) {
 
           var sanitizedTitle = sanitizeHtml(title);
           var sanitizedDescription = sanitizeHtml(description, {
-            allowedTags : ["h1"]
+            allowedTags : ["h1","h3"]
           })
 
           var html = template.HTML(
@@ -66,7 +66,7 @@ var app = http.createServer(function (request, response) {
       var list = template.list(filelist);
       var html = template.HTML(title, list,
         `
-        <form action="http://localhost:3000/create_process" method="post">
+        <form action="/create_process" method="post">
           <p><input type="text" name="title" placeholder="title"></p>
           <p>
             <textarea name="description" placeholder="description"></textarea>

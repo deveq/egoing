@@ -1,3 +1,3 @@
 var part = require('./mpart');
 
-console.log(part.f());
+console.log(part);

@@ -1,8 +1,9 @@
-var M = {
-  v : 'v',
-  f : function() {
-    console.log(this.v);
-  }
+var v = 'v';
+function f() {
+  console.log(this.v);
 }
 
-module.exports = M;
+module.exports = {
+  v : v,
+  f : f
+}
